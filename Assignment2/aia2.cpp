@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
   
 	// process image data base
 	// load image as gray-scale, paths in argv[2] and argv[3]
-	Mat exC1 = imread( argv[1], 0);
+	Mat exC1 = imread( argv[2], 0);
 	Mat exC2  = imread( argv[3], 0);
 	if ( (!exC1.data) || (!exC2.data) ){
 	    cout << "ERROR: Cannot load class examples in\n" << argv[2] << "\n" << argv[3] << endl;
